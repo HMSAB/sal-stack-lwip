@@ -67,7 +67,7 @@
 #define MEMP_NUM_TCP_PCB            4
 #endif
 
-#define MEMP_NUM_PBUF               8
+#define MEMP_NUM_PBUF               16
 
 #define TCP_QUEUE_OOSEQ             0
 #define TCP_OVERSIZE                0
@@ -125,8 +125,8 @@
 
 /* MSS should match the hardware packet size */
 #define TCP_MSS                     1460
-#define TCP_SND_BUF                 (2 * TCP_MSS)
-#define TCP_WND                     (2 * TCP_MSS)
+#define TCP_SND_BUF                 (6 * TCP_MSS)
+//#define TCP_WND                     (2 * TCP_MSS)
 #define TCP_SND_QUEUELEN            (2 * TCP_SND_BUF/TCP_MSS)
 
 // Broadcast
